@@ -1,19 +1,4 @@
-export const testInput = `1000
-2000
-3000
-
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000`;
-
-export const realInput = `5916
+export const day1input = `5916
 7281
 1715
 3853

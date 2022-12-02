@@ -1,5 +1,3 @@
-import { realInput, testInput } from "./inputs/day-1";
-
 const getArrayOfCalories = (input: string): string[] =>
   input.split(/\r?\n|\r|\n/g);
 
@@ -36,7 +34,5 @@ export const getArrayOfTotalCaloriesPerElf = (input: string): number[] => {
   ).caloriesPerElf;
 };
 
-const elfWithMostCalories = (input: string) =>
+export const elfWithMostCalories = (input: string) =>
   Math.max(...getArrayOfTotalCaloriesPerElf(input));
-
-console.log(elfWithMostCalories(realInput));
