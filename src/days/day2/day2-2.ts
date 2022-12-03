@@ -1,10 +1,10 @@
+import { getInputArray } from "../../utils";
 import {
   A,
   B,
   C,
   FirstPlayerHand,
   getEquivelent,
-  getPlayedHandsEveryTurn,
   getScores,
   RockPaperScissor,
   SecondPlayerHand,
@@ -35,7 +35,7 @@ const getHandFromStrategy = (
 };
 
 export const scoreWithStrategyGuide = (input: string): number => {
-  const handsArray = getPlayedHandsEveryTurn(input);
+  const handsArray = getInputArray(input);
   const scores = handsArray.reduce<{
     firstPlayerScore: number;
     secondPlayerScore: number;

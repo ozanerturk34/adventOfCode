@@ -1,6 +1,4 @@
-export const getPlayedHandsEveryTurn = (input: string) => {
-  return input.split(/\r?\n|\r|\n/g);
-};
+import { getInputArray } from "../../utils";
 
 export const splitHand = (hand: string) => {
   return hand.split(" ") as [FirstPlayerHand, SecondPlayerHand];
@@ -91,7 +89,7 @@ export const getScores = (
 };
 
 export const getScoresOfEachPlayerInTheEnd = (input: string) => {
-  const handsArray = getPlayedHandsEveryTurn(input);
+  const handsArray = getInputArray(input);
   const scores = handsArray.reduce<{
     firstPlayerScore: number;
     secondPlayerScore: number;
