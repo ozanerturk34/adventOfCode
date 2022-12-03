@@ -1,8 +1,7 @@
-const getArrayOfCalories = (input: string): string[] =>
-  input.split(/\r?\n|\r|\n/g);
+import { getInputArray } from "../../utils";
 
 export const getArrayOfTotalCaloriesPerElf = (input: string): number[] => {
-  const arrayOfCalories = getArrayOfCalories(input);
+  const arrayOfCalories = getInputArray(input);
   return arrayOfCalories.reduce<{
     caloriesPerElf: number[];
     caloriesOfCurrentElf: number;
