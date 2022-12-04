@@ -4,10 +4,13 @@ import { getScoresOfEachPlayerInTheEnd } from "./days/day2/day2-1";
 import { scoreWithStrategyGuide } from "./days/day2/day2-2";
 import { getSumOfPriorityOfRecurringInventoryInRucksacks } from "./days/day3/day3-1";
 import { getTotalNumberOfRecurringInventoryInRucksacks } from "./days/day3/day3-2";
+import { getNumberOfFullyOverlappingRangePairs } from "./days/day4/day4-1";
+import { getNumberOfPairsWithAnyOverlappedSections } from "./days/day4/day4-2";
 
 import { day1input } from "./inputs/day-1";
 import { day2_1input, day2_2input } from "./inputs/day-2";
 import { day3_1input, day3_2input } from "./inputs/day-3";
+import { day4input } from "./inputs/day-4";
 
 console.log("Day1-1", elfWithMostCalories(day1input));
 console.log(
@@ -27,3 +30,6 @@ console.log(
   "Day3-2",
   getTotalNumberOfRecurringInventoryInRucksacks(day3_2input)
 );
+
+console.log("Day4-1", getNumberOfFullyOverlappingRangePairs(day4input));
+console.log("Day4-2", getNumberOfPairsWithAnyOverlappedSections(day4input));
